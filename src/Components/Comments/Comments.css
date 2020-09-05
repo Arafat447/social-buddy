@@ -1,0 +1,17 @@
+.comment-container {
+    border:1px solid lightgray;
+    border-radius: 15px;
+    margin-bottom:15px;
+    padding:20px;
+    display: flex;
+}
+.comment-container img {
+    width:70px;
+    height: 70px ;
+    border-radius: 50%;
+    margin: 30px;
+}
+.comment-container{
+    box-shadow: 6px 4px 9px 0px rgba(184,182,184,0.46);
+
+}
