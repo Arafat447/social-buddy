@@ -1,3 +1,9 @@
 .card-container {
     margin-top:20px;
+    display: flex;
+}
+.card-container img {
+    float: right;
+    padding-bottom:10px;
+    border-radius: 5px;
 }

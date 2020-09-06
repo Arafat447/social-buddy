@@ -34,8 +34,9 @@ const Posts = (props) => {
                 <Container maxWidth="md">
                     <Card className={classes.root}>
                         <CardContent>
+                        <div><img src={`https://loremflickr.com/320/240?random=${id}`} alt=""/></div>
                             <Typography className={classes.title} color="textSecondary" gutterBottom>
-                                Post No : {id}
+                                <h2>Post No : {id}</h2> 
                             </Typography>
                             <Typography className={classes.pos} color="textSecondary">
                                Post title : {title}

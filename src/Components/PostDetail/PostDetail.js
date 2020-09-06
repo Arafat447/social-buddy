@@ -7,6 +7,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Comments from '../Comments/Comments';
+import './PostDetail.css'
 
 const PostDetail = () => {
     const { postId } = useParams();
@@ -46,6 +47,7 @@ const PostDetail = () => {
             <Container maxWidth="md">
                 <Card className={classes.root}>
                     <CardContent>
+                        <div><img src={`https://loremflickr.com/320/240?random=${id}`} alt=""/></div>
                         <Typography className={classes.title} color="textSecondary" gutterBottom>
                             Post NO {id}
                         </Typography>
@@ -58,8 +60,10 @@ const PostDetail = () => {
                             {'"a benevolent smile"'}
                         </Typography>
                         <br/>
-                        <Link to="/home"><Button size="small" variant="contained" color="primary">Back To Home</Button></Link>
+                        {/* <Link to="/home"><Button size="small" variant="contained" color="primary">Back To Home</Button></Link> */}
                     </CardContent>
+                    <span className="share-button"><Button variant="contained" color="primary">Comment</Button></span>
+                    <span><Button variant="contained" color="primary">Share</Button></span>
                 </Card>
                 <h3>Comments {comments.length}</h3>
                 {
